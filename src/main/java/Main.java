@@ -9,7 +9,7 @@ public class Main {
         Apartment apartment2 = new Apartment("Cracow", 50, 7000);
         Apartment apartment3 = new Apartment("Gdansk", 121, 8345);
 
-        List<Apartment> apartmentList = new ArrayList<Apartment>();
+        List<Apartment> apartmentList = new ArrayList<>();
         apartmentList.add(apartment1);
         apartmentList.add(apartment2);
         apartmentList.add(apartment3);
@@ -27,9 +27,7 @@ public class Main {
 
         }
         x=x/apartmentList.size();
-        x*=100;
-        x=Math.round(x);
-        x/=100;
+        x=Round.round(x);
         System.out.println(x);
     }
 }
